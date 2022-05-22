@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Liseth Bernal</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!--Enlace CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--Enlace iconos-->
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+
+    <!-- Link Swiper's CSS (Vincula la libreria con la página web)-->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Enlace a animate.style-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#seccion1"><img src="images/logo.svg" alt=""></a> </h1>
+            </div>
+            <ul>
+                <li><a href="#seccion2">SERVICIOS</a></li>
+                <li><a href="#seccion3">TRABAJOS</a></li>
+                <li><a href="#seccion4">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="seccion1">
+            <div class="wrap">
+                <div class="minicontenedor">
+                    <div class="contenedorbebe">
+                        <div class="foto"> 
+                        <img src="images/foto.jpg" alt=""></div>
+                            
+                        <div class="informacion">
+                                <h1 class="animate__animated animate__backInDown">BIENVENIDO</h1>
+                                <p>Hola, soy Liseth Bernal, diseñadora gráfica en proceso, amante de las artes y la 
+                                    comunicación. Proveo de diseños funcionales y estéticos que buscan satisfacer todas las 
+                                    necesidades de las personas con quienes trabajo. </p>
+                                
+                                <ul>
+                                    <li><a href="assets/FormatoHV.pdf" target="_blank">Hoja de Vida</a></li>
+                                    <li><a href="https://www.behance.net/lizethb" target="_blank">Behance</a></li>
+                                </ul>
+                        </div>
+                    </div>
+
+                        <div class="down animate__animated animate__heartBeat animate__slower animate__infinite">
+                            <a href="#seccion2"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                        </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="servicios" id="seccion2">
+        <div class="wrap">
+            <h1>Servicios</h1>
+            <p>Me desempeño mayormente en tres áreas del diseño gráfico</p>
+
+                <div class="cajon">
+                    <div class="cajonuno">
+                        <img src="images/fotografia.jpg" alt="Fotografía artística">
+                        <h3>Fotografía</h3>
+                        <p>Sesión de fotos, fotografía periodística, fotografía artística, retoque digital.</p>
+                
+                    </div>
+                    <div class="cajondos">
+                        <img src="images/editorial.jpg" alt="Artículo Hayao Miyazaki">
+                        <h3>Diseño editorial</h3>
+                        <p>Diseño, maquetación y composición de libros, revistas y periódicos. </p>
+                    </div>
+                    <div class="cajontres">
+                        <img src="images/ilustracion.jpg" alt="Ilustración de flores Plumeria">
+                        <h3>Ilustración</h3>
+                        <p>Con enfoque al público infantil.</p>
+                    </div>
+                </div>
+
+                <div class="down animate__animated animate__heartBeat animate__slower animate__infinite">
+                    <a href="#seccion3"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     
+    <section class="trabajos" id="seccion3">
+        <div class="wrap">
+            <h1>Mis trabajos</h1>
+            <p>Una breve mirada a mis proyectos</p>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/canguros.svg" alt="Ilustración de canguros"></div>
+                <div class="swiper-slide"><img src="images/margaritas amarillas.svg" alt="Ilustración de margaritas amarillas"></div>
+                <div class="swiper-slide"><img src="images/ilustracionpersonaje.jpg" alt="Ilustración de personaje infantil"></div>
+                <div class="swiper-slide"><img src="images/fotografia1.jpg" alt="Manifestación Noviembre 21 del 2019"></div>
+                <div class="swiper-slide"><img src="images/fotografia2.jpg" alt="Manifestación Noviembre 21 del 2019"></div>
+                <div class="swiper-slide"><img src="images/fotografia3.jpg" alt="Manifestación Noviembre 21 del 2019"></div>
+                <div class="swiper-slide"><img src="images/editorial1.jpg" alt="Artículo Paula Scher"></div>
+                <div class="swiper-slide"><img src="images/editorial2.jpg" alt="Artículo Paula Scher"></div>
+                <div class="swiper-slide"><img src="images/editorial3.jpg" alt="Página periódico"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="down animate__animated animate__heartBeat animate__slower animate__infinite">
+                <a href="#seccion4"> <i class="fa-solid fa-circle-chevron-down"></i> </a>
+            </div>
+
+    </section>
+
+    <section class="contacto" id="seccion4">
+        <div class="wrap">
+            <h1>Contacto</h1>
+            <p>Si te gustaría trabajar conmigo o tienes una consulta, no dudes en contactarme por alguno de estos medios. </p>
+
+            <article class="enlaces">
+                <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.033240942961!2d-75.58591928523069!3d6.259351795469356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44291ace0905c5%3A0xa82ebb8889ab4dae!2sUniversidad%20Cat%C3%B3lica%20Luis%20Amig%C3%B3%20-%20Medell%C3%ADn!5e0!3m2!1ses!2sco!4v1652130741861!5m2!1ses!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                <div class="redes">
+                    <ul>
+                        <li><a href="mailto:liseth.bernaltu@amigo.edu.co?subject=Quiero trabajar contigo&" target="_blank"><i class="fa-solid fa-envelope"></i> Correo</a></li>
+                        <li><a href="https://www.facebook.com/everythingoess" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook </a></li>
+                        <li><a href="https://www.instagram.com/intim.e/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram </a></li>
+                        <li><a href="https://www.behance.net/lizethb" target="_blank"><i class="fa-brands fa-behance"></i> Behance </a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
+
+</body>
+</html>

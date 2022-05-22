@@ -1,0 +1,510 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color__primario: #023047;
+    --color__secundario: #F2F2F2;
+    --color__terciario: #d90429 ;
+    --type: 'Inter', sans-serif;
+
+}
+
+*{
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    font-family: var(--type);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    margin-bottom: 0.3em;
+}
+
+h3{
+    font-weight: 500;
+    margin: 0.3em 0em;
+}
+
+.down{
+    margin-top: 1.5em;
+}
+
+.down a{
+    color: var(--color__terciario);
+    font-size: 1.2em;
+}
+
+/**navegador**/
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: var(--color__primario);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+nav .logo img{
+    width: 45%;
+    margin-top: 0.3em;
+}
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color__secundario);
+    padding: 0.5em 1em;
+    border-radius: 2.5em;
+}
+
+nav .container ul li a:hover{
+    color: var(--color__secundario);
+    background-color:var(--color__terciario);
+}
+
+
+section .wrap {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 96vh;
+    max-width: 1700px;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+}
+
+/**seccion 1**/
+
+.bienvenida .minicontenedor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+}
+
+.bienvenida .contenedorbebe{
+    display: flex;
+}
+
+.bienvenida{
+    background-color: var(--color__secundario);
+}
+
+.bienvenida .informacion{
+    align-self: center;
+}
+
+.bienvenida .foto img{
+    width: 80%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.bienvenida ul{
+    margin-top: 1.5em;
+}
+
+.bienvenida ul li{
+    display: inline;
+    padding: 0.5em;
+}
+
+.bienvenida ul li a{
+    color: var(--color__secundario);
+    padding: 0.5em 1em;
+    border-radius: 2.5em;
+    background-color: var(--color__primario);
+    font-size: 0.875em;
+}
+
+.bienvenida ul li a:hover{
+    color: var(--color__secundario);
+    background-color: var(--color__terciario);
+}
+
+/**seccion 2**/
+
+.servicios{
+    flex-direction: column;
+    background-color: var(--color__primario);
+    color: var(--color__secundario)
+}
+
+.servicios .wrap{
+    flex-direction: column;
+}
+
+.servicios .cajon{
+    display: flex;
+    margin-top: 1.5em;
+    justify-content: space-around;
+}
+
+.servicios .cajon img{
+    width: 80%;
+    height: auto;
+}
+
+.servicios .cajon p{
+    font-size: 0.875em;
+}
+
+/**seccion 3**/
+
+.trabajos{
+    background-color:var(--color__secundario);
+}
+
+.trabajos .wrap{
+    flex-direction: column;
+}
+
+/**seccion 4**/
+
+.contacto{
+    background-color: var(--color__primario);
+    color: var(--color__secundario);
+}
+
+.contacto .wrap{
+    flex-direction: column;
+}
+
+.contacto .enlaces{
+    margin-top: 1.5em;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.contacto .enlaces .mapa iframe{
+    width: 100%;
+    height: 40vh;
+}
+
+.contacto .enlaces .redes ul{
+    display: flex;
+    list-style: none;
+    margin-top: 1em;
+    justify-content: space-around;
+}
+
+.contacto .enlaces .redes ul li a{
+    color: var(--color__secundario);
+}
+
+.contacto .enlaces .redes ul li a:hover{
+    text-decoration: underline;
+}
+
+/**Slider**/
+
+.swiper {
+    width: 100%;
+    height: 70%;
+    margin-top: 1.5em;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color__secundario);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /**Fin de slider**/
+
+  /**RESPONSIVE**/
+
+  /* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+    /**navegador**/
+    
+    .container{
+        width: 90%;
+    }
+    
+    nav .logo img{
+        width: 40%;
+    }
+    
+    nav .container ul li a{
+        font-size: 1em;
+    }
+
+    section .wrap {
+        width: 90%;
+        height: 200hv;
+        font-size: 1em;
+    }
+    
+    /**seccion 1**/
+    
+    .bienvenida .minicontenedor{
+        flex-wrap: wrap;
+        margin-top: 8em;
+    }
+    
+    .bienvenida .informacion{
+        margin-left: 0em;
+    }
+    
+    .bienvenida .foto img{
+        width: 80%;
+    }
+    
+    .bienvenida ul li a{
+        font-size: 1em;
+    }
+    
+    /**seccion 2**/
+    
+    .servicios .cajon{
+        display: flex;
+    }
+    
+    .servicios .cajon img{
+        width: 90%;
+    }
+  
+    /**seccion 4**/
+
+    .contacto .enlaces{
+        width: 90%;
+    }
+    
+    .contacto .enlaces .redes ul li a{
+        font-size: 1em;
+    }
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    .down{
+        margin: 2em 0em;
+    }
+    
+    /**navegador**/
+    
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    nav .logo img{
+        width: 40%;
+        margin: 0% 30%;
+    }
+    
+    nav .container ul li a{
+        font-size: 0.875em;
+    }
+
+    section .wrap {
+        width: 90%;
+        height: 200hv;
+        font-size: 0.875em;
+    }
+    
+    /**seccion 1**/
+    
+    .bienvenida .minicontenedor{
+        flex-wrap: wrap;
+        margin-top: 8em;
+    }
+    
+    .bienvenida .informacion{
+        margin-left: 0em;
+    }
+    
+   
+    .bienvenida .foto img{
+        width: 70%;
+    }
+    
+    .bienvenida ul li a{
+        font-size: 1em;
+    }
+    
+    /**seccion 2**/
+
+    .servicios{
+        flex-direction: column;
+    }
+    
+    .servicios .wrap{
+        flex-direction: column;
+    }
+    
+    .servicios .cajon{
+        display: flex;
+    }
+    
+    .servicios .cajon img{
+        width: 90%;
+    }
+    
+    /**seccion 3**/
+    
+    .trabajos .wrap{
+        flex-direction: column;
+    }
+    
+    /**seccion 4**/
+    .contacto .enlaces{
+        width: 90%;
+    }
+    
+    .contacto .enlaces .redes ul li a{
+        font-size: 1em;
+    }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    h1{
+        margin-top: 0.6em;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+    
+    .down{
+        margin-bottom: 1em;
+    }
+    
+    /**navegador**/
+    
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    nav .logo img{
+        width: 40%;
+        margin: 0% 30%;
+    }
+    
+    nav .container ul li a{
+        font-size: 0.75em;
+        padding: 0.5em 0.5em;
+    }
+
+    section .wrap {
+        width: 90%;
+        height: fit-content;
+        font-size: 0.875em;
+    }
+    
+    /**seccion 1**/
+    
+    .bienvenida .minicontenedor{
+        flex-wrap: wrap;
+        margin-top: 8em;
+    }
+    
+    .bienvenida .contenedorbebe{
+        flex-direction: column;
+    }
+    
+    .bienvenida .informacion{
+        margin-left: 0em;
+        flex-direction: column;
+    }
+    
+    .bienvenida .foto img{
+        width: 60%;
+        margin-top: 0.5em;
+    }
+    
+    .bienvenida ul{
+        margin-top: 0.5em;
+    }
+    
+    .bienvenida ul li{
+        display: block;
+        padding: 0.8em 0em;
+    }
+    
+    .bienvenida ul li a{
+        font-size: 1em;
+    }
+    
+    /**seccion 2**/
+    
+    .servicios .cajon{
+        flex-direction: column;
+        margin-top: 0em;
+    }
+    
+    .servicios .cajon img{
+        width: 55%;
+        margin-top: 1.5em;
+
+    }
+    
+    /**seccion 3**/
+    
+    .trabajos .wrap{
+        width: 100;
+        height: 52vh;
+    }
+    
+    /**seccion 4**/
+    
+    .contacto .enlaces{
+        width: 90%;
+        margin-bottom: 2em;
+    }
+    
+    .contacto .enlaces .redes ul li a{
+        font-size: 0.875em;
+    }
+
+}
